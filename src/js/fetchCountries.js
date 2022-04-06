@@ -8,7 +8,7 @@ const fetchCountries = name => {
   return fetch(`${BASE_URL}/${name}?${queryParams}`).then(res => {
     if (res.ok) {
       return res.json();
-    }
+    }    
     return Promise.reject(new Error('Something went wrong... ERROR!'));
   });
 };
