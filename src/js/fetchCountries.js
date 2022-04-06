@@ -9,7 +9,7 @@ const fetchCountries = name => {
     if (res.ok) {
       return res.json();
     }
-    return Promise.reject(new Error('Smth went wrong.. ERROR!'));
+    return Promise.reject(new Error('Something went wrong... ERROR!'));
   });
 };
 

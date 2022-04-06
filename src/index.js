@@ -18,7 +18,7 @@ const resetMarkup = () => {
 const createCountryList = arr => {
   const markup = arr
     .map(({ flags, name }) => {
-      return `<li class="country-list__item"><img src="${flags.svg}" alt="${name.common} flag" width="30" height="30" class="country-list__img"><p class="country-list__text">${name.common}</p></li>`;
+      return `<li class="country-list__item"><img src="${flags.svg}" alt="${name.common} flag" width="40" height="30" class="country-list__img"><p class="country-list__text">${name.common}</p></li>`;
     })
     .join('');
   refs.countryList.innerHTML = markup;
@@ -31,7 +31,7 @@ const createCountryInfo = arr => {
       return `
         <div class="country-info__wrapper">
           <div class="country-info__name-wrapper">
-             <img src="${flags.svg}" alt="${name.common}" width="40" height="40" class="country-info__img" />
+             <img src="${flags.svg}" alt="${name.common}" width="40" height="30" class="country-info__img" />
              <p class="country-info__name">${name.common}</p>
           </div>
           <p class="country-info__text">Capital: <span class="country-info__text-description">${capital}</span></p>
